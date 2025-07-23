@@ -13,33 +13,25 @@ import requests
 # ------------------------ Header แบบโลโก้จาก URL GitHub
 st.markdown("""
     <style>
-    .fixed-logo {
-        position: fixed;
-        top: 60px; /* ✅ เว้นจากขอบบนเพื่อไม่ให้โดนแถบ Streamlit Cloud บัง */
-        left: 0;
+    .logo-container {
         width: 100%;
-        z-index: 9999;
         background-color: white;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        padding: 15px 0;
+        padding: 20px 0;
+        margin: 5px auto 2rem auto;  /* เพิ่ม margin-top: 70px ให้ไม่โดนแถบบนบัง */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .fixed-logo img {
+    .logo-container img {
         height: 60px;
-    }
-
-    .logo-spacer {
-        height: 120px; /* ✅ เว้นพื้นที่ให้เนื้อหาด้านล่างไม่โดนโลโก้บัง */
     }
     </style>
 
-    <div class="fixed-logo">
-        <img src="https://cdn.statically.io/gh/Nichanun-punn/customer-map-app/main/logo.png" alt="SCGP Logo">
+    <div class="logo-container">
+        <img src="https://cdn.statically.io/gh/Nichanun-punn/customer-map-app/main/logo.png">
     </div>
-    <div class="logo-spacer"></div>
 """, unsafe_allow_html=True)
 
 
