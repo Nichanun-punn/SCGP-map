@@ -15,9 +15,9 @@ st.markdown("""
     <style>
     .logo-container {
         width: 100%;
-        background-color: white;
+        background-color: #F5F5F5;
         padding: 20px 0;
-        margin: 5px auto 2rem auto;  /* เพิ่ม margin-top: 70px ให้ไม่โดนแถบบนบัง */
+        margin: 5px auto 2rem auto;  
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: center;
