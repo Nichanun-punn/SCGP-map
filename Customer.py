@@ -11,24 +11,32 @@ import base64
 import requests
 
 # ------------------------ Header แบบโลโก้จาก URL GitHub
-st.markdown(
-    """
-    <div style='
-        position: sticky;
-    top: 0;
-    z-index: 9999;
-    background-color: white;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    '>
-        <img src="https://raw.githubusercontent.com/Nichanun-punn/customer-map-app/main/logo.png" height="50">
-    </div>
-    <div style="margin-bottom: 20px;"></div>
-    """,
-    unsafe_allow_html=True
-)
+st.markdown("""
+    <style>
+    .fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+        background-color: white;
+        padding: 10px 0;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+    .fixed-header img {
+        height: 50px;
+    }
+    .spacer {
+        height: 10px; /* เว้นไว้ให้ content ด้านล่างไม่ถูกบัง */
+    }
+    </style>
 
+    <div class="fixed-header">
+        <img src="https://raw.githubusercontent.com/Nichanun-punn/customer-map-app/main/logo.png">
+    </div>
+    <div class="spacer"></div>
+""", unsafe_allow_html=True)
 # ---------------- CONFIG ---------------- #
 st.set_page_config(page_title="Customer Map Planner", layout="wide")
 st.sidebar.markdown("""
