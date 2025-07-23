@@ -11,41 +11,21 @@ import base64
 import requests
 
 # ------------------------ Header แบบโลโก้จาก URL GitHub
-st.markdown("""
-    <img src="https://raw.githubusercontent.com/Nichanun-punn/customer-map-app/main/logo.png" height="50">
-""", unsafe_allow_html=True)
-st.markdown(f"""
-    <style>
-    .fixed-header {{
-        position: fixed;
-        top: 0;
-        left: 0;
+st.markdown(
+    """
+    <div style='
         width: 100%;
-        z-index: 9999;
         background-color: white;
-        padding: 10px 0;
+        padding: 10px 0 0 0;
+        text-align: center;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    }}
-    .fixed-header-content {{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }}
-    .fixed-header-content img {{
-        height: 50px;
-    }}
-    .spacer {{
-        height: 1px;
-    }}
-    </style>
-
-    <div class="fixed-header">
-        <div class="fixed-header-content">
-             <img src="https://raw.githubusercontent.com/Nichanun-punn/customer-map-app/main/logo.png" height="50"loading="lazy" onerror="this.style.display='none';">
-        </div>
+    '>
+        <img src="https://raw.githubusercontent.com/Nichanun-punn/customer-map-app/main/logo.png" height="50">
     </div>
-    <div class="spacer"></div>
-""", unsafe_allow_html=True)
+    <div style="margin-bottom: 20px;"></div>
+    """,
+    unsafe_allow_html=True
+)
 
 # ---------------- CONFIG ---------------- #
 st.set_page_config(page_title="Customer Map Planner", layout="wide")
