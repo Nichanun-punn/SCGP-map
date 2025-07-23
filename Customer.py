@@ -38,7 +38,7 @@ st.markdown(f"""
 
     <div class="fixed-header">
         <div class="fixed-header-content">
-             <img src="https://raw.githubusercontent.com/Nichanun-punn/customer-map-app/main/logo.png" height="50">
+             <img src="https://drive.google.com/uc?export=view&id=1DRRQCUW_osT_xFBlcKvOj4l3jB-tR_he" height="50">
         </div>
     </div>
     <div class="spacer"></div>
