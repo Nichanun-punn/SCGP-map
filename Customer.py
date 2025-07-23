@@ -14,11 +14,13 @@ import requests
 st.markdown(
     """
     <div style='
-        width: 100%;
-        background-color: white;
-        padding: 10px 0 0 0;
-        text-align: center;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     '>
         <img src="https://raw.githubusercontent.com/Nichanun-punn/customer-map-app/main/logo.png" height="50">
     </div>
