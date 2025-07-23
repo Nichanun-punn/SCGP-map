@@ -11,6 +11,9 @@ import base64
 import requests
 
 # ------------------------ Header แบบโลโก้จาก URL GitHub
+st.markdown("""
+    <img src="https://raw.githubusercontent.com/Nichanun-punn/customer-map-app/main/logo.png" height="50">
+""", unsafe_allow_html=True)
 st.markdown(f"""
     <style>
     .fixed-header {{
@@ -38,7 +41,7 @@ st.markdown(f"""
 
     <div class="fixed-header">
         <div class="fixed-header-content">
-             <img src="https://raw.githubusercontent.com/Nichanun-punn/customer-map-app/main/logo.png" height="10"loading="lazy" onerror="this.style.display='none';">
+             <img src="https://raw.githubusercontent.com/Nichanun-punn/customer-map-app/main/logo.png" height="50"loading="lazy" onerror="this.style.display='none';">
         </div>
     </div>
     <div class="spacer"></div>
