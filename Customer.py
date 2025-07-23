@@ -13,30 +13,35 @@ import requests
 # ------------------------ Header แบบโลโก้จาก URL GitHub
 st.markdown("""
     <style>
-    .fixed-header {
-        position: fixed;
-        top: 0;
-        left: 0;
+    /* ลบ padding/margin ด้านบน */
+    html, body, .main, .block-container {
+        padding-top: 0rem !important;
+        margin-top: 0rem !important;
+    }
+
+    /* กล่องโลโก้แบบ full width */
+    .logo-container {
         width: 100%;
-        z-index: 9999;
         background-color: white;
         padding: 10px 0;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
+        margin: 0 auto 2rem auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    .fixed-header img {
-        height: 50px;
-    }
-    .spacer {
-        height: 80px; /* เว้นไว้ให้ content ด้านล่างไม่ถูกบัง */
+
+    .logo-container img {
+        height: 60px;
     }
     </style>
 
-    <div class="fixed-header">
+    <div class="logo-container">
         <img src="https://raw.githubusercontent.com/Nichanun-punn/customer-map-app/main/logo.png">
     </div>
-    <div class="spacer"></div>
 """, unsafe_allow_html=True)
+
+
 # ---------------- CONFIG ---------------- #
 st.set_page_config(page_title="Customer Map Planner", layout="wide")
 st.sidebar.markdown("""
