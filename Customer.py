@@ -28,7 +28,7 @@ st.markdown("""
         height: 50px;
     }
     .spacer {
-        height: 10px; /* เว้นไว้ให้ content ด้านล่างไม่ถูกบัง */
+        height: 80px; /* เว้นไว้ให้ content ด้านล่างไม่ถูกบัง */
     }
     </style>
 
